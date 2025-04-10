@@ -184,6 +184,8 @@ def get_comparison_metrics(data_vendas, data_leads, selected_start, selected_end
             (data_vendas['Valor Capturado (R$)'] < 400) &
             (data_vendas['Pacote'] == '1ª Compra'))
         
+        print filtro_primeira_sessao
+        
         primeira_sessao_current = len(data_vendas.loc[current_vendas_mask & filtro_primeira_sessao])
         primeira_sessao_previous = len(data_vendas.loc[previous_vendas_mask & filtro_primeira_sessao])
         
