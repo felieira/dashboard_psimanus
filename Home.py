@@ -181,7 +181,7 @@ def get_comparison_metrics(data_vendas, data_leads, selected_start, selected_end
         # Primeira Sessão
         filtro_primeira_sessao = (
             (data_vendas['Status'] == 'Pago') & 
-            (data_vendas['Valor Capturado (R$)'] < 400) &
+            (data_vendas['Valor CapturadoR$)'] < 400) &
             (data_vendas['Pacote'] == '1ª Compra'))
         
         print filtro_primeira_sessao
